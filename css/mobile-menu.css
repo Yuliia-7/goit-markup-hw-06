@@ -1,0 +1,128 @@
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  transition:
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.menu {
+  background-color: #fff;
+  padding: 72px 16px 40px;
+  max-width: 320px;
+  max-height: 640px;
+  position: relative;
+}
+
+.mobile-btn-close {
+  background-color: #e7e9fc;
+  border: none;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 24px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2e2f42;
+  transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-btn-close svg {
+  fill: currentColor;
+}
+
+.mobile-btn-close:hover,
+.mobile-btn-close:focus {
+  background-color: #404bbf;
+  color: #fff;
+}
+
+.mobile-nav-items {
+  padding-bottom: 80px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.mobile-nav-items-link {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-nav-items-link:hover,
+.mobile-nav-items-link:focus {
+  color: #404bbf;
+}
+
+.mobile-contacts-items {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 24px;
+  padding-bottom: 48px;
+}
+
+.mobile-contacts-link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #434455;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-contacts-link:hover,
+.mobile-contacts-link:focus {
+  color: #4d5ae5;
+}
+
+.mobile-sm {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.mobile-sm-link a {
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-sm-link a svg {
+  fill: currentColor;
+}
+
+.mobile-sm-link a:hover,
+.mobile-sm-link a:focus {
+  background-color: #31d0aa;
+}
