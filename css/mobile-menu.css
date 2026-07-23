@@ -22,8 +22,8 @@
 .menu {
   background-color: #fff;
   padding: 72px 16px 40px;
-  max-width: 320px;
-  max-height: 640px;
+  min-width: 100%;
+  height: 100%;
   position: relative;
 }
 
@@ -57,7 +57,7 @@
 }
 
 .mobile-nav-items {
-  padding-bottom: 80px;
+  margin-bottom: 168px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -83,7 +83,7 @@
   align-items: flex-start;
   flex-direction: column;
   gap: 24px;
-  padding-bottom: 48px;
+  margin-bottom: 48px;
 }
 
 .mobile-contacts-link {
