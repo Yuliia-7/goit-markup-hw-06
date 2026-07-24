@@ -16,7 +16,7 @@
   justify-content: center;
   flex-direction: column;
   gap: 8px;
-  width: calc((100% - 72px));
+  width: 100%;
 }
 
 .features-subtitle {
@@ -50,6 +50,10 @@
     align-items: flex-start;
     justify-content: flex-start;
     width: calc((100% - 24px) / 2);
+  }
+
+  .features-subtitle {
+    text-align: left;
   }
 }
 

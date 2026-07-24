@@ -1,21 +1,34 @@
 .hero.section {
   background-color: #2e2f42;
   padding: 72px 0px;
-  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
   background-image:
     linear-gradient(
       180deg,
       rgba(46, 47, 66, 0.7) 0%,
       rgba(46, 47, 66, 0.7) 100%
     ),
-    url(../images/mobile-hero-bg.jpg),
-    image-set(
-      url(../images/mobile-hero-bg.jpg) 1x,
-      url(../images/mobile-hero-bg@2x.jpg) 2x
-    );
+    url(../images/mobile-hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+@media (min-resolution: 2dppx) {
+  .hero.section {
+    background-image:
+      linear-gradient(
+        180deg,
+        rgba(46, 47, 66, 0.7) 0%,
+        rgba(46, 47, 66, 0.7) 100%
+      ),
+      image-set(
+        url(../images/mobile-hero-bg.jpg) 1x,
+        url(../images/mobile-hero-bg@2x.jpg) 2x
+      );
+  }
 }
 
 .hero-container {
@@ -27,6 +40,7 @@
 }
 
 .hero-title {
+  max-width: 216px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11111;
@@ -67,20 +81,31 @@
         rgba(46, 47, 66, 0.7) 0%,
         rgba(46, 47, 66, 0.7) 100%
       ),
-      url(../images/tab-hero-bg.jpg),
-      image-set(
-        url(../images/tab-hero-bg.jpg) 1x,
-        url(../images/tab-hero-bg@2x.jpg) 2x
-      );
+      url(../images/tab-hero-bg.jpg);
+  }
+
+  @media (min-resolution: 2dppx) {
+    .hero.section {
+      background-image:
+        linear-gradient(
+          180deg,
+          rgba(46, 47, 66, 0.7) 0%,
+          rgba(46, 47, 66, 0.7) 100%
+        ),
+        image-set(
+          url(../images/tab-hero-bg.jpg) 1x,
+          url(../images/tab-hero-bg@2x.jpg) 2x
+        );
+    }
   }
 
   .hero-container {
     display: flex;
-    justify-content: flex-start;
     gap: 36px;
   }
 
   .hero-title {
+    max-width: 496px;
     font-size: 56px;
     line-height: 1.07143;
   }
@@ -95,16 +120,26 @@
         rgba(46, 47, 66, 0.7) 0%,
         rgba(46, 47, 66, 0.7) 100%
       ),
-      url(../images/hero-bg.jpg),
-      image-set(url(../images/hero-bg.jpg) 1x, url(../images/hero-bg@2x.jpg) 2x);
+      url(../images/hero-bg.jpg);
+  }
+
+  @media (min-resolution: 2dppx) {
+    .hero.section {
+      background-image:
+        linear-gradient(
+          180deg,
+          rgba(46, 47, 66, 0.7) 0%,
+          rgba(46, 47, 66, 0.7) 100%
+        ),
+        image-set(
+          url(../images/hero-bg.jpg) 1x,
+          url(../images/hero-bg@2x.jpg) 2x
+        );
+    }
   }
 
   .hero-container {
     display: flex;
     gap: 48px;
-  }
-
-  .hero-title {
-    width: 496px;
   }
 }
