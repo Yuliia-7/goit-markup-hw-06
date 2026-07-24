@@ -114,10 +114,6 @@
     column-gap: 24px;
     row-gap: 64px;
   }
-
-  .team-list {
-    width: calc((100% - 24px) / 2);
-  }
 }
 
 @media (min-width: 1158px) {

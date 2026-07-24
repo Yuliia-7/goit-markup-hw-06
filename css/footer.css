@@ -212,6 +212,10 @@
     justify-content: center;
   }
 
+  .footer-sc-text {
+    text-align: left;
+  }
+
   .footer-form {
     display: flex;
     flex-direction: row;

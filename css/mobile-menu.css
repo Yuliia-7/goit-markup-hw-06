@@ -67,7 +67,6 @@
   align-items: flex-start;
   flex-direction: column;
   gap: 40px;
-  margin-top: auto;
 }
 
 .mobile-nav-items-link {
@@ -88,13 +87,16 @@
   color: #404bbf;
 }
 
-.mobile-contacts {
-  font-style: normal;
+.mobile-wrap {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
   gap: 48px;
+}
+
+.mobile-contacts {
+  font-style: normal;
 }
 
 .mobile-contacts-items {
@@ -147,4 +149,10 @@
 .mobile-sm-link a:hover,
 .mobile-sm-link a:focus {
   background-color: #31d0aa;
+}
+
+@media (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
 }
